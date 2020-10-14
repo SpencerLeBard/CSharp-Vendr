@@ -1,4 +1,5 @@
 ﻿using System;
+using Vendr.Controller;
 
 namespace Vendr
 {
@@ -13,6 +14,8 @@ ____   ____                 .___
   \     /\  ___/|   |  \/ /_/ | |  | \/
    \___/  \___  >___|  /\____ | |__|   
               \/     \/      \/       ");
+      new VendrController().Run();
+
     }
   }
 }

@@ -8,9 +8,10 @@ namespace Vendr.Services
 {
   class VendrService
   {
+    public List<Snack> Snacks { get; set; }
     internal string GetPurchasables()
     {
-      var list = "ORDER FROM THE FOLLOWING: \n";
+      var list = "THANK YOU FOR PURCHASING \n";
       List<IPurchasable> items = new List<IPurchasable>();
 
       for (int i = 0; i < items.Count; i++)
@@ -23,10 +24,10 @@ namespace Vendr.Services
     public VendrService()
     {
       Snacks = new List<Snack>(){
-        new Snack("poptart", "Desc1"),
-        new Snack("your mom", "Desc2"),
-        new Snack("your dad", "Desc3"),
-        new Snack("Pickle in Bag", "Desc4")
+        new Snack("poptart", 1 ,"Desc1"),
+        new Snack("your mom", 2 ,"Desc2"),
+        new Snack("your dad", 3 ,"Desc3"),
+        new Snack("PickleRick", 4 ,"Desc4")
       };
     }
   }

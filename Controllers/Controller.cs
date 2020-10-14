@@ -17,12 +17,21 @@ namespace Vendr.Controller
 
     private void GetUserInput()
     {
-      Console.WriteLine("Options: 1.) Snacks");
+      Console.WriteLine("Options: 1.) Poptarts 2.) Your Mom 3.) Your Dad 4.) PickleRick ");
       string input = Console.ReadLine().ToLower();
       Console.Clear();
       switch (input)
       {
-        case "buy":
+        case "1":
+          Buy();
+          break;
+        case "2":
+          Buy();
+          break;
+        case "3":
+          Buy();
+          break;
+        case "4":
           Buy();
           break;
         default:

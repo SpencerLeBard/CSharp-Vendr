@@ -3,19 +3,19 @@ using Vendr.Interfaces;
 
 namespace Vendr.Models
 {
-  abstract class Snacks : IPurchasable
+  class Snack : IPurchasable
   {
     public string Title { get; set; }
-    // public int Price { get; set; }
+    public int Price { get; set; }
     public string Description { get; set; }
     public bool IsAvailable { get; set; }
 
-    public Snacks(string title, int price, string description, bool isAvailable)
+    public Snack(string title, int price, string description)
     {
       Title = title;
-      // Price = price;
+      Price = price;
       Description = description;
-      IsAvailable = isAvailable;
+      IsAvailable = true;
     }
   }
 }
