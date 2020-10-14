@@ -35,7 +35,7 @@ namespace Vendr.Controller
           Buy();
           break;
         default:
-          Console.WriteLine("Fool of a took");
+          Console.WriteLine("idiot");
           break;
       }
     }
