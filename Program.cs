@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace vendr2
+namespace Vendr
 {
   class Program
   {
